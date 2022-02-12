@@ -27,7 +27,7 @@ async def start(bot, m:Message):
 async def game(bot, m:Message):
   while guess != SECRET_WORD and not(out_of_guesses):
     if GUESS_COUNT < MAX_GUESSES:
-      guess = await m.message.edit(f"Enter your guesses : ")
+      guess = await m.reply_text(f"Enter your guesses : ")
       GUESS_COUNT += 1
     else:
       out_of_guesses = True
