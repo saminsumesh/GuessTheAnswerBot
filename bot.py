@@ -22,7 +22,6 @@ async def start(bot, m:Message):
       InlineKeyboardButton("Start Guessing", callback_data="game")
     ]]
   ),
-  disable_web_page_preview=True
 
 @Client.on_callback_query("game")
 async def game(bot, m:Message):
