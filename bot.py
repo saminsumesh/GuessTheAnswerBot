@@ -5,7 +5,7 @@ from config import GUESS_COUNT, MAX_GUESSES, SECRET_WORD, API_ID, API_HASH, BOT_
 
 
 Client = Client(
-  "Guess Bot"
+  "Guess Bot",
   API_ID,
   API_HASH,
   bot_token=BOT_TOKEN
@@ -21,7 +21,7 @@ async def start(bot, m:Message):
     [[
       InlineKeyboardButton("Start Guessing", callback_data="game")
     ]]
-  ),
+  )
 
 @Client.on_callback_query("game")
 async def game(bot, m:Message):
