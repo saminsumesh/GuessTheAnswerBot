@@ -21,7 +21,7 @@ async def start(bot, m:Message):
     [[
       InlineKeyboardButton("Start Guessing", callback_data="game")
     ]]
-  )
+  ))
 
 @Client.on_callback_query("game")
 async def game(bot, m:Message):
