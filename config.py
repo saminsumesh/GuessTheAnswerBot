@@ -16,4 +16,4 @@ GUESS_COUNT = int(environ.get("GUESS_COUNT", ""))
 
 MAX_GUESSES = int(environ.get("MAX_GUESSES", ""))
 
-SECRET_WORD = envrion.get("Any word that you want your users to guess")
+SECRET_WORD = environ.get("Any word that you want your users to guess")
