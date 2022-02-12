@@ -24,7 +24,7 @@ async def start(bot, m:Message):
   ))
 
 @Client.on_callback_query("game")
-async def game(bot, m:Message):
+async def game(bot, m:Message, guess, out_of_guesses):
   while guess != SECRET_WORD and not(out_of_guesses):
     if GUESS_COUNT < MAX_GUESSES:
       guess = await m.message.edit(f"Enter your guesses : ")
